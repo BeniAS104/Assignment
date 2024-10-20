@@ -1,2 +1,2 @@
-# heyday-assignment
+# Assignment
  
