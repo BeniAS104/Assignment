@@ -1,0 +1,77 @@
+.adventure {
+  display: flex;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-image-wrapper {
+  flex: 0 1 464.5px; 
+  display: flex;
+  justify-content: center;
+}
+
+.cat-image {
+  max-width: 100%; 
+  aspect-ratio: 1;
+}
+
+.cat-content {
+  flex: 1; 
+  max-width: 400px; 
+}
+
+.adventure.layout2 {
+  flex-direction: row-reverse; 
+}
+
+
+@media (max-width: 1024px) {
+.adventure {
+  padding: 20px;
+}
+.cat-image-wrapper {
+  flex: 0 1 400px; 
+}
+}
+
+@media (max-width: 992px) {
+.adventure {
+  padding: 20px;
+}
+.cat-image-wrapper {
+  flex: 0 1 370px; 
+}
+
+}
+@media (max-width: 768px) {
+  .adventure.layout1 {
+      padding: unset;
+      flex-direction: column;
+  }
+  
+  .adventure.layout2 {
+      padding: unset;
+      flex-direction: column-reverse;
+  }
+
+  .cat-image-wrapper {
+    flex: 0 1 464.5px; 
+      max-width: 100%; 
+      overflow: hidden; 
+  }
+}
+@media (max-width: 576px) {
+  .cat-image-wrapper {
+    flex: 0 1 400px; 
+  }
+}
+@media (max-width: 480px) {
+  .adventure.layout1,.adventure.layout2  {
+    padding-inline: 5%;
+    gap: 32px;
+  }
+  .cat-image-wrapper {
+    flex: unset; 
+  }
+}
